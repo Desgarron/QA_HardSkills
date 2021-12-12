@@ -1,0 +1,8 @@
+#!/bin/bash
+cd Name_2
+mkdir dir_1 dir_2 dir_3
+cd dir_1
+touch test_1.txt test_2.txt test_3.txt 1_test.json 2_test.json
+mkdir folder_1 folder_2 folder_3
+ls -la
+mv /e/Name_2/dir_1/test_1.txt /e/Name_2/dir_2/test_1.txt | /e/Name_2/dir_1/test_2.txt mv /e/Name_2/dir_1/test_2.txt
