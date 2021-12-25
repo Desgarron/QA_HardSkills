@@ -90,7 +90,7 @@
 									"\r",
 									"//Проверка, что salary в ответе равно salary s request (salary забрать из request.)\r",
 									"pm.test(\"My salary equal to request\", function(){\r",
-									"pm.expect(respons.salary).to.equal(respons.salary)\r",
+									"pm.expect(respons.salary).to.equal(Number(request.salary))\r",
 									"})\r",
 									"\r",
 									"//Вывести в консоль параметр family из response.\r",
