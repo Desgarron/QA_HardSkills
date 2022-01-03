@@ -22,25 +22,24 @@ join salary S on salary_id = S.id
 where S.monthly_salary < 2000;
 
 --3.Вывести все зарплатные позиции, но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
-select salary.monthly_salary , employees.employee_name 
-from employee_salary
-left join salary on salary_id = salary.id
-left join employees on employee_id = employees.id
-where employees.employee_name is null 
+select salary.monthly_salary
+from salary s 
+left join employee_salary es on s.id = es.salary_id
+where employee_id is null;
+
 
 --4.Вывести все зарплатные позиции  меньше 2000 но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
-select salary.monthly_salary , employees.employee_name 
-from employee_salary
-left join salary on salary_id = salary.id
-left join employees on employee_id = employees.id
-where salary.monthly_salary < 2000 and employees.employee_name is null
+select s.monthly_salary
+from salary as s
+left join employee_salary as es on s.id = es.salary_id
+where s.monthly_salary < 2000
+and employee_id is null;
 
 --5.Найти всех работников кому не начислена ЗП.
-select employees.employee_name , salary.monthly_salary 
-from employee_salary
-right join employees on employee_salary.employee_id = employees.id
-left join salary on employee_salary.salary_id = salary.id
-where salary.monthly_salary is null;
+select employees.employee_name
+from employee_salary as es
+right join employees on es.employee_id = employees.id
+where es.salary_id is null;
 
 --6.Вывести всех работников с названиями их должности.
 select employees.employee_name , roles.role_name
@@ -255,8 +254,8 @@ where roles.role_name like '%developer%'
 --29.Вывести имена, должности и ЗП всех специалистов по возрастанию
 select employees.employee_name , roles.role_name , salary.monthly_salary
 from employee_salary
-join roles_employee on employee_salary.employee_id = roles_employee.employee_id 
-join roles on roles_employee.role_id = roles.id
+left join roles_employee on employee_salary.employee_id = roles_employee.employee_id 
+left join roles on roles_employee.role_id = roles.id
 left join salary on employee_salary.salary_id = salary.id
 left join employees on employee_salary.employee_id = employees.id
 order by salary.monthly_salary asc;
