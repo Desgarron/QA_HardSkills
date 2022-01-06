@@ -81,9 +81,9 @@ where r.role_name like '%Automation%QA%';
 --12.Вывести имена и зарплаты Junior специалистов
 select e.employee_name , s.monthly_salary 
 from employee_salary as es
-left join employees as e on es.employee_id = e.id
+right join employees as e on es.employee_id = e.id
 left join salary as s on salary_id = s.id 
-left join roles_employee as re on es.employee_id = re.employee_id
+left join roles_employee as re on e.id = re.employee_id
 left join roles as r on re.role_id = r.id
 where r.role_name like '%Junior%';
 
