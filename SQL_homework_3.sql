@@ -40,14 +40,14 @@ where es.employee_id is null;
 --6.Вывести всех работников с названиями их должности.
 select e.employee_name , r.role_name
 from roles_employee
-left join roles as r on role_id = r.id
-right join employees as e ON employee_id = e.id;
+right join employees as e ON employee_id = e.id
+left join roles as r on role_id = r.id;
 
 --7.Вывести имена и должность только Java разработчиков.
 select e.employee_name , r.role_name
 from roles_employee
-left join roles as r on role_id = r.id
 right join employees as e ON employee_id = e.id
+left join roles as r on role_id = r.id
 where r.role_name like '%Java %';
 
 --8.Вывести имена и должность только Python разработчиков
