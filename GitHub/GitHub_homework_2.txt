@@ -8,12 +8,28 @@
 - Mobile testing
 → Для всех веток будет будет командра git branch name branch
 
-2. Запушить все ветки на внешний репозиторий → git push origin --all
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта → touch bag_report.txt : vim bag_report.txt
-4. Запушить структуру багрепорта на внешний репозиторий → git push -u origin Bag_Report
-5. Вмержить ветку Bag Reports в Main → git merge Bag_Report
-6. Запушить main на внешний репозиторий. → git checkout main ; git push
-7. В ветке CheckLists набросать структуру чек листа. → git checkout CheckLists ; touch CheckList.txt ; vim CheckList
-8. Запушить структуру на внешний репозиторий → git add .; git commit -m "комметарий" ; git push -u origin CheckLists
+2. Запушить все ветки на внешний репозиторий → 
+git push origin --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта → 
+touch bag_report.txt : vim bag_report.txt
+
+4. Запушить структуру багрепорта на внешний репозиторий → 
+git push -u origin Bag_Report
+
+5. Вмержить ветку Bag Reports в Main → 
+git merge Bag_Report
+
+6. Запушить main на внешний репозиторий. → 
+git checkout main ; git push
+
+7. В ветке CheckLists набросать структуру чек листа. → 
+git checkout CheckLists ; touch CheckList.txt ; vim CheckList
+
+8. Запушить структуру на внешний репозиторий → 
+git add .; git commit -m "комметарий" ; git push -u origin CheckLists
+
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-10. Синхронизировать Внешнюю и Локальную ветки Main → git pull
+
+10. Синхронизировать Внешнюю и Локальную ветки Main →
+git pull
