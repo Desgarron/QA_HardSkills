@@ -36,7 +36,6 @@ print(type(q), q)
 print(type(w), w)
 print(type(r), r)
 
-
 # 11) Создать 2 переменные String, создать переменную в которой суммируете эти переменные. Вывести в консоль.
 li = 'Liza'
 ya = 'Yaroslav'
