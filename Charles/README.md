@@ -49,7 +49,7 @@ salary: int
             }
 }
 ```
-Taska:
+Tasks:
 + Do it in both Rewrite and BreakPoint (you can disable it so that it doesn’t stop on each request)
 + Replace the body in Charles so that the salary that you entered in Postman leaves in the request, and in `u_salary_1_5_year` the figure returned is less than the original from the request.
 -------------------
@@ -71,7 +71,7 @@ weight: int
  "daily_sleep": "weight * 2.5"
  }
 ```
-Taska:
+Tasks:
 + Do it in both Rewrite and BreakPoint (you can disable it so that it doesn’t stop on each request)
 + Change the request parameters in Charles so that Postman receives a response where another name, `daily_food > weight from the request`, and `daily_sleep < weight` from the request.
 -------------------
@@ -168,7 +168,7 @@ salary: int
             }
 }
 ```
-Task:
+Tasks:
 + Do it in both Rewrite and BreakPoint (you can disable it so that it doesn’t stop on each request)
 + Make it through Charles so that Postman returns a response in which `qa_salary_after_1.5_year` is renamed to `qa_salary_after_1.5_month`
 + Make `qa_salary_after_3.5_years` less than `qa_salary_after_12_months` in response
