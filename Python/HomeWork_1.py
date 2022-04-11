@@ -26,7 +26,6 @@ w = frozenset('Edward')
 r = dict(sa='1', ra='2', ta='3')
 
 # 10) Вывести в консоль все выше перечисленные переменные с добавлением типа данных.
-
 print(type(a), a)
 print(type(b), b)
 print(type(c), c)
