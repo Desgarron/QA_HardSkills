@@ -5,7 +5,7 @@ protocol: http
 IP: 162.55.220.72
 Port: 5005
 ```
-----------------
+-----------------
 2. Ex_1:
 + Method: GET
 + Endpoint: /get_method
