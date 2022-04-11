@@ -161,3 +161,4 @@ if currency_convertor:
         print('Unknow currency')
 else:
     print('Переменная currency_convertor = ', item_3)
+    
