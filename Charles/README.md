@@ -35,7 +35,7 @@ age: int
 salary: int
 ```
 + Response:
-```
+```json
 {
  "name": "name",
  "age": "age",
