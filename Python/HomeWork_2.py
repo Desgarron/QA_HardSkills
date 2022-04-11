@@ -186,3 +186,5 @@ b_item_2_int = int(b_item_f)
 
 #  61. Вывести b_item_2_int в консоль.
 print('b_item_2_int = ', b_item_2_int, type(b_item_2_int))
+
+
