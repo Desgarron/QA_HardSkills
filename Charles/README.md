@@ -1,12 +1,12 @@
 ### Charles Homework: Traffic capture
-1. Ex_0: Focus on below listed queries
+#### Ex_0: Focus on below listed queries
 ```
 protocol: http
 IP: 162.55.220.72
 Port: ####
 ```
 -----------------
-2. Ex_1:
+#### Ex_1:
 + Method: GET
 + Endpoint: /get_method
 + Request url params:
@@ -25,7 +25,7 @@ Tasks:
 + Do it in both Rewrite and BreakPoint (you can disable it so that it doesn’t stop on each request)
 + Change the url in Charles so that the request leaves the name that you entered in Postman, and returns the one that you substituted in Charles.
 -------------------
-3. Ex_2:
+#### Ex_2:
 + Method: POST
 + Endpoint: /user_info_3
 + Request form data:
@@ -53,7 +53,7 @@ Tasks:
 + Do it in both Rewrite and BreakPoint (you can disable it so that it doesn’t stop on each request)
 + Replace the body in Charles so that the salary that you entered in Postman leaves in the request, and in `u_salary_1_5_year` the figure returned is less than the original from the request.
 -------------------
-4. Ex_3:
+#### Ex_3:
 + Method: GET
 + Endpoint: /object_info_1
 + Request url params:
@@ -75,7 +75,7 @@ Tasks:
 + Do it in both Rewrite and BreakPoint (you can disable it so that it doesn’t stop on each request)
 + Change the request parameters in Charles so that Postman receives a response where another name, `daily_food > weight from the request`, and `daily_sleep < weight` from the request.
 -------------------
-5. Ex_4:
+#### Ex_4:
 + Method: GET
 + Endpoint: /object_info_3
 + Request url params:
@@ -113,7 +113,7 @@ Tasks:
 + Make it through Charles so that the server returns a `500 code`.
 + Make it through Charles so that the server returns a `405 code`.
 -------------------
-6. Ex_5:
+#### Ex_5:
 + Method: GET
 + Endpoint: /object_info_4
 + Request url params:
@@ -140,7 +140,7 @@ Tasks:
 + Replace `salary` in request
 + Replace `(salary * 2)` in response
 -------------------
-7. Ex_6:
+#### Ex_6:
 + Method: POST
 + Endpoint: /user_info_2
 + Request form data:
