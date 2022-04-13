@@ -1,5 +1,5 @@
 ### Charles Homework: Traffic capture
-#### Ex_0: Focus on below listed queries
+Ex_0: Focus on below listed queries
 ```
 protocol: http
 IP: 162.55.220.72
