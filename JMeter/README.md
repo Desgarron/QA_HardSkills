@@ -1,4 +1,5 @@
-### Jmeter - Homework #1
+## Jmeter
+### Homework #1
 #### Make a script with listed endpoints and give a load of 50, 250, 500 threads.
 
 
@@ -51,7 +52,7 @@ age: int
 salary: int
 ```
 -------------
-### Jmeter - Homework #2
+### Homework #2
 
 1. http://162.55.220.72:5005/user_info
 - Request (RAW JSON)
@@ -162,6 +163,6 @@ The task ***:
 + Make an Assertion to check `"salary": "salary"`
 
 -------------
-### Jmeter - Homework #3
+### Homework #3
 
 
