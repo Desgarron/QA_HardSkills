@@ -162,8 +162,3 @@ The task ***:
 + Learn how Response Assertion works
 + Make an Assertion to check status code 200
 + Make an Assertion to check `"salary": "salary"`
-
--------------
-### Homework #3
-
-
