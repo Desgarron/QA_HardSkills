@@ -15,9 +15,31 @@
 #                 "Вы ввели пустое поле. Введите число." Если введено пустое значение.
 #     4. Валюту пользователя определите сами.
 
+# 1 solution
+def convector_3():
+    currency = {"USD": 29.50, "EUR": 31.82, "CHF": 30.34, "GBP": 37.19, 'CNY': 4.49}
+    print('Введите целое число в гривне: ', end='')
+    flag = True
+    while flag:
+        value = input()
+        if value.isalpha():
+            print("Вы ввели не число. Введите число.")
+        elif value.strip() == '' or len(value) == 0:
+            print("Вы ввели пустое поле. Введите число.")
+        elif int(value) < 0:
+            print("Введите положительное число.")
+        else:
+            if int(value) >= 0:
+                print('Ты ввёл', value, 'в Гривне.')
+                for k, v in currency.items():
+                    a = int(value) / int(v)
+                    print("Конвертированная сумма в " + k + ' =', int(a))
+                flag = False
+
+# 2 solution
 currency = {"USD": 29.50, "EUR": 31.82, "CHF": 30.34, "GBP": 37.19, 'CNY': 4.49}
 
-value = input('Введите целое число в гривне')
+value = input('Введите целое число в гривне: -')
 if value.strip() == '' or len(value) == 0:
     print("Вы ввели пустое поле. Введите число.")
 else:
