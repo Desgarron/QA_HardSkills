@@ -36,6 +36,7 @@ def convector_3():
                     print("Конвертированная сумма в " + k + ' =', int(a))
                 flag = False
 
+
 # 2 solution
 currency = {"USD": 29.50, "EUR": 31.82, "CHF": 30.34, "GBP": 37.19, 'CNY': 4.49}
 

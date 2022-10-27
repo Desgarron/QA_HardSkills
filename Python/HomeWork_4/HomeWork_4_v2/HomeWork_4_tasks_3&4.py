@@ -5,9 +5,6 @@ from HomeWork_4_tasks_4 import convector_4
 # Задача 4
 
 
-# Задача 3
-
-
 
 
 
