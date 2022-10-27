@@ -49,7 +49,7 @@ else:
             print('Ты ввёл', value, 'в Гривне')
             for k, v in currency.items():
                 a = int(value) / int(v)
-                print("Конвертированная сумма в " + k + ' =', int(a))
+                print("Конвертированная сумма в " + k.upper() + ' =', int(a))
         elif int(value) < 0:
             print("Введите положительное число.")
     except ValueError:

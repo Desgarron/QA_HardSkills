@@ -36,7 +36,7 @@ def convector_4():
                     elif int(value) >= 0:
                         print("Вы ввели сумму", value, "и валюту", currency_choose.upper())
                         r = int(value) / v
-                        print("конвертированная сумма в", currency_choose, "=", int(r))
+                        print("конвертированная сумма в", currency_choose.upper(), "=", int(r))
                     elif int(value) < 0:
                         print("Введите положительное число.")
 
@@ -56,7 +56,7 @@ while True:
                     if int(currency_2) >= 0:
                         print("Вы ввели сумму", currency_2, "и валюту", currency_1.upper())
                         r = int(currency_2) / v
-                        print("конвертированная сумма в", currency_1, "=", int(r))
+                        print("конвертированная сумма в", currency_1, "=222", int(r))
                     elif int(currency_2) < 0:
                         print("Введите положительное число.")
                 except ValueError:
