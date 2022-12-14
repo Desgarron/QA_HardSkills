@@ -1,7 +1,7 @@
-from crud_1.create_1 import create_user
-from crud_1.read_1 import user_info, all_users_info
-from crud_1.delete_1 import delete_all, delete_user
-from crud_1.update_1 import update_user_info
+from crud.create_1 import create_user
+from crud.read_1 import user_info, all_users_info
+from crud.delete_1 import delete_all, delete_user
+from crud.update_1 import update_user_info
 
 users_emails = []
 users_storage = {}
