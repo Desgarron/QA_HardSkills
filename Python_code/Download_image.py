@@ -32,3 +32,26 @@ with ThreadPoolExecutor() as executor:
 finish = time.perf_counter()
 
 print(f'Выполнение заняло {finish-start} секунд.')
+
+
+
+
+# or code here v2
+import requests
+import os
+
+def download_image(url, directory, filename):
+    response = requests.get(url)
+    filepath = os.path.join(directory, filename)
+    
+    with open(filepath, "wb") as file:
+        file.write(response.content)
+    
+    print(f"Изображение сохранено по пути: {filepath}")
+
+# Пример использования
+image_url = "https://example.com/image.jpg"  # URL изображения, которое нужно скачать
+save_directory = "/path/to/save/directory"  # Путь к директории, в которую нужно сохранить изображение
+image_filename = "image.jpg"  # Имя файла, под которым нужно сохранить изображение
+
+download_image(image_url, save_directory, image_filename)
