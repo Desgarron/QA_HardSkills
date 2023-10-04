@@ -17,7 +17,7 @@ class DlfMain(QDialog):
         self.ledText.move(90, 50)  # move ledText to axis x=90, y=50
 
         self.btnUpdate = QPushButton('Update Window title', self)  # create button
-        self.btnUpdate.move(90, 80)  # move btnUpdate to axis x=90, y=80
+        self.btnUpdate.move(70, 80)  # move btnUpdate to axis x=90, y=80
         self.btnUpdate.clicked.connect(self.evt_btn_update_clicked)  # event on button click
 
     def evt_btn_update_clicked(self) -> None:
